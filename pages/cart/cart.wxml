@@ -1,0 +1,48 @@
+<view class="list">
+    <view class="wrapper" >
+        <view class="item" wx:for="{{cartListArr}}" wx:key="key">
+        <!-- 选中组件部分  -->
+        <!-- 点击 按钮的时候，将当前item 对应的下标传递给逻辑层。 -->
+            <view class="radio" bindtap="selectItem" data-index="{{index}}">
+                <icon type="success" wx:if="{{item.checked}}"></icon>
+                <icon type="circle" wx:else></icon>
+            </view>
+            <image src="{{item.pic}}"></image>
+            <!-- 内容区域 -->
+            <view class="content">
+                <view class="title">
+                    {{item.name}}
+                </view>
+                <view class="desc">
+                    {{item.info}}
+                </view>
+                <view class="price">
+                   ￥{{item.price}}
+                </view>
+                <view class="operation">
+                    <view class="minus child" bindtap="cartMinus" data-index="{{index}}">-</view>
+                    <view class="count child">{{item.num}}</view>
+                    <view class="add child" bindtap="cartAdd"  data-index="{{index}}">+</view>
+                </view>
+                <view class="delete" bindtap="cartDelete"  data-index="{{index}}">删除</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+<view class="bottom">
+    <view class="radio" bindtap="selectedAll">
+        <icon type="success" wx:if="{{checkedAll}}"></icon>
+        <icon type="circle" wx:else></icon>
+    </view>
+    <view class="checkAll">
+        全选
+    </view>
+    <view class="sum">
+        合计
+    </view>
+    <view class="total {{totalPrice? 'bg' : ''}}">
+        结算({{totalPrice}})
+    </view>
+</view>

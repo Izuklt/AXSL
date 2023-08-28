@@ -1,0 +1,26 @@
+
+page{
+    background-color: #ddd;
+}
+/* 搜索框 */
+.search{
+    height: 60rpx;
+    padding: 12rpx;
+    background-color: white;
+    font-size: 26rpx;
+}
+
+input{
+    background-color: #ddd;
+    height: 60rpx;
+    border-radius: 20rpx;
+    padding-left: 20rpx;
+}
+
+/* 列表 */
+.list{
+    margin-top: 20rpx;
+}
+
+ /* 引入外部的样式文件 */
+ @import "../../templates/foodItem/foodItem.wxss";

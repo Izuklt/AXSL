@@ -1,0 +1,156 @@
+page{
+    background-color: #ddd;
+}
+
+/* 列表项 */
+.list{
+    margin-bottom: 120rpx;
+}
+.wrapper{
+    margin-bottom: 20rpx;
+}
+
+.item{
+    background-color: white;
+    display: flex;
+    padding: 10rxp;
+    position: relative;
+    margin-top: 10rpx;
+    height: 200rpx;
+}
+
+.item .content{
+    flex:  1;
+    margin-left: 10rpx;
+    padding-right: 20rpx;
+}
+.item .desc{
+    font-size: 24rpx;
+    color: #aaa;
+    margin-top: 6rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 70rpx;
+}
+.item .title{
+    font-size: 30rpx;
+    margin-top: 2rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    height: 34rpx;
+}
+.item .price{
+    position: absolute;
+    font-size: 24rpx;
+    color: red;
+    left: 280rpx;
+    bottom: 10rpx;
+}
+.item .operation{
+    position: absolute;
+    right: 150rpx;
+    bottom: 10rpx;
+}
+.item .operation .child{
+    display: inline-block;
+}
+.item .add{
+    width: 51rpx;
+    height: 51rpx;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 50rpx;
+    border: 1px solid;
+    font-size: 40rpx;
+}
+.item .minus{
+    width: 50rpx;
+    height: 50rpx;
+    text-align: center;
+    line-height: 50rpx;
+    border: 1px solid;
+    font-size: 40rpx;
+}
+.item .count{
+    padding: 10rpx;
+}
+
+.item image{
+    width: 184rpx;
+    height: 184rpx;
+    margin-left: 74rpx;
+    padding-top: 8rpx;
+}
+.item .radio{
+    position: absolute;
+    left: 0;
+    top: 80rpx;
+    width: 40rpx;
+    height: 40rpx;
+    padding-left: 14rpx;
+}
+.item .delete{
+    position: absolute;
+    width: 80rpx;
+    height: 50rpx;
+    text-align: center;
+    line-height: 50rpx;
+    background-color: red;
+    color: white;
+    right: 10rpx;
+    bottom: 16rpx;
+    font-size: 26rpx;
+}
+
+/* 底部结算 */
+.bottom{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100rpx;
+    background-color: white;
+    display: flex;
+}
+.bottom .radio{
+    position: absolute;
+    left: 0;
+    top: 30rpx;
+    width: 40rpx;
+    height: 40rpx;
+    padding-left: 14rpx;
+}
+.bottom .checkAll{
+    position: absolute;
+    left: 70rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.bottom .sum{
+    position: absolute;
+    right: 320rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+
+.bottom .total{
+    position: absolute;
+    right: 0rpx;
+    height: 100rpx;
+    width: 300rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background-color:#aaa;
+    color: white;
+    /* border-left: 1px solid; */
+}
+.bottom .bg{
+    background-color: #43BF92;
+}

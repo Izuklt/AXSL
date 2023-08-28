@@ -1,0 +1,10 @@
+/* 列表 */
+page{
+    background-color: #ddd;
+}
+
+.list{
+    margin-top: 20rpx;
+}
+
+@import "../../templates/foodItem/foodItem.wxss";

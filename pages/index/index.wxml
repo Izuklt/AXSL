@@ -1,0 +1,58 @@
+<!--pages/index/index.wxml-->
+<!-- 首页轮播 -->
+<view class="banner">
+    <swiper autoplay="true" interval="3000" circular="true" bindchange="swiperChange">
+        <swiper-item wx:for="{{bannerArr}}" wx:key="key">
+            <image src="{{item.image}}"></image>
+            <view class="bottom-bg">
+                {{item.title}}
+            </view>
+        </swiper-item>
+    </swiper>
+    <view class="swiper-index">{{swiperIndex}}/{{bannerArr.length}}</view>
+</view>
+
+<!-- 首页的每一一测 -->
+
+<view class="everyday">
+    <view class="day-item">
+        <image src="../../images/info_left.jpg"></image>
+        <view>每日一测</view>
+    </view>
+    <view class="day-item">
+        <image src="../../images/info_right.jpg"></image>
+        <view>每日食谱</view>
+    </view>
+</view>
+
+
+<!-- 首页列表 -->
+<!-- 通过navigator 组件实现的跳转。 -->
+<!-- <view class="index-list">
+    <view class="list-item" wx:for="{{listArr}}" wx:key="key">
+        <navigator url="../itemDetail/itemDetail?id={{item.id}}" open-type="navigate">
+            <view class="item-title">{{item.title}}</view>
+            <view class="item-content">
+                <image src="{{item.image}}"></image>
+                <view class="item-desc">
+                    {{item.desc}}
+                </view>
+                <view class="read-num"><text>{{item.readNum}}</text>阅读</view>
+            </view>
+        </navigator>
+    </view>
+</view> -->
+
+<!-- 通过api跳转 -->
+<view class="index-list">
+    <view class="list-item" wx:for="{{listArr}}" wx:key="key" bindtap="navigateToDetail" data-id="{{item.id}}">
+            <view class="item-title">{{item.title}}</view>
+            <view class="item-content">
+                <image src="{{item.image}}"></image>
+                <view class="item-desc">
+                    {{item.desc}}
+                </view>
+                <view class="read-num"><text>{{item.readNum}}</text>阅读</view>
+            </view>
+    </view>
+</view>

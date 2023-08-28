@@ -1,0 +1,70 @@
+page{
+    background-color: #ddd;
+}
+
+.header{
+    height: 50rpx;
+    background-color: white;
+    display: flex;
+    padding: 16rpx;
+}
+.header .location{
+    margin-left: 10rpx;
+}
+
+.header .search{
+    flex: 1;
+    background-color: #eee;
+    border-radius: 20rpx;
+    margin-left: 26rpx;
+    margin-right: 16rpx;
+    padding-left: 20rpx;
+    line-height: 50rpx;
+    color: #ccc;
+    font-size: 26rpx;
+}
+
+
+/* 二级导航 nav */
+.nav-list{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20rpx;
+    color: #666;
+    font-size: 24rpx;
+}
+
+.nav-item{
+    width: 25%;
+    margin-top: 20rpx;
+}
+
+.nav-list image{
+    width: 74rpx;
+    height: 74rpx;
+}
+
+.food-list{
+    margin-top: 20rpx;
+}
+
+/* 引入模板的wxss */
+@import "../../templates/foodItem/foodItem.wxss";
+
+
+.no-result{
+    margin-top: 50rpx;
+    text-align: center;
+    color: #555;
+    font-size: 28rpx;
+}
+
+
+.food-bottom{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    bottom: 0;
+}

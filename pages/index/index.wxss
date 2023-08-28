@@ -1,0 +1,119 @@
+/* 首页的轮播 */
+.banner {
+    width: 100%;
+    height: 340rpx;
+    position: relative;
+    font-size: 28rpx;
+    color: white;
+}
+
+.banner swiper {
+    width: 100%;
+    height: 340rpx;
+}
+
+.banner swiper-item {
+    width: 100%;
+    height: 340rpx;
+}
+
+.banner image {
+    width: 750rpx;
+    height: 340rpx;
+}
+
+.banner .bottom-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40rpx;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    line-height: 40rpx;
+}
+
+.banner .swiper-index {
+    position: absolute;
+    right: 30rpx;
+    bottom: 0;
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 24rpx;
+}
+
+
+/* 每日一测 */
+.everyday {
+    display: flex;
+    text-align: center;
+    padding: 45rpx 10rpx;
+    font-size: 30rpx;
+}
+
+.everyday image {
+    width: 306rpx;
+    height: 185rpx;
+}
+
+.day-item {
+    margin-left: 40rpx;
+}
+
+/* 首页列表 */
+.index-list {
+    padding: 2rpx 16rpx;
+}
+
+.index-list image {
+    width: 240rpx;
+    height: 150rpx;
+}
+
+.index-list .list-item {
+    padding-bottom: 10rpx;
+    padding-top: 10rpx;
+    border-bottom: 1px solid #bbb;
+}
+
+.index-list .item-content {
+    display: flex;
+    position: relative;
+}
+
+.item-content .read-num {
+    position: absolute;
+    right: 10rpx;
+    bottom: 5rpx;
+    font-size: 20rpx;
+    color: #666;
+}
+
+.item-content text {
+    color: red;
+    margin-right: 6rpx;
+}
+
+.item-content .item-desc {
+    margin-left: 18rpx;
+    font-size: 24rpx;
+    color: #666;
+    flex: 1;
+    line-height: 40rpx;
+    letter-spacing: 3rpx;
+    height: 120rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.index-list .item-title {
+    padding-bottom: 6rpx;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 2rpx;
+}

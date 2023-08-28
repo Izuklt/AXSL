@@ -1,0 +1,51 @@
+.item{
+    padding: 16rpx;
+    background-color: white;
+    display: flex;
+    margin-bottom: 20rpx;
+}
+.item image{
+    width: 200rpx;
+    height: 200rpx;
+    border: 2rpx solid red;
+}
+
+.item .content{
+    position: relative;
+    flex: 1;
+    margin-left: 20rpx;
+}
+.item .title{
+    letter-spacing: 2rpx;
+    color: #333;
+}
+.item .desc{
+    letter-spacing: 2rpx;
+    color: #666;
+    font-size: 24rpx;
+    height:70rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.item .buy-info{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.buy-info .price{
+    color: red;
+    font-size: 20rpx;
+    margin-right: 30rpx;
+}
+.buy-info .buy-num{
+    font-size: 24rpx;
+    color: #666;
+}
+.no-result{
+    margin-top: 100rpx;
+    text-align: center;
+    color: #666;
+} 

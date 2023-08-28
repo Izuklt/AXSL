@@ -1,0 +1,30 @@
+<!-- 用户名和头像 -->
+<view class='content'>
+    <view class="user">
+    <!-- 展示用户头像 -->
+        <open-data class='logo' type="userAvatarUrl"></open-data>
+    </view>
+    <view >
+    <!-- 展示用户昵称 -->
+        <open-data class='logo' type="userNickName"></open-data>
+    </view>
+</view>
+
+<!-- 联系客服 -->
+<view class='content'>
+    <button open-type="contact"  bindcontact='handleContact'>联系客服</button>
+</view>
+
+<!-- 获取手机号  -->
+<view class='content'>
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber2">获取手机号</button>
+</view>
+
+<!-- 拨打客服电话 -->
+<view class='content'>
+    <button bindtap="callPhone">拨打客服电话</button>
+</view>
+
+<view class="content">
+    <button bindtap='login'>登录</button>
+</view>

@@ -1,0 +1,56 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/food/food",
+        "pages/cart/cart",
+        "pages/me/me",
+        "pages/itemDetail/itemDetail",
+        "pages/foodSearch/foodSearch",
+        "pages/location/location",
+        "pages/foodTypeList/foodTypeList",
+        "pages/foodDetail/foodDetail"
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "是否允许当前应用使用定位功能？"
+        }
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#43BF92",
+        "navigationBarTitleText": "安心食疗",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#888",
+        "selectedColor": "#43bf92",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/tab1.png",
+                "selectedIconPath": "images/tab5.png"
+            },
+            {
+                "pagePath": "pages/food/food",
+                "text": "食疗坊",
+                "iconPath": "images/tab2.png",
+                "selectedIconPath": "images/tab6.png"
+            },
+            {
+                "pagePath": "pages/cart/cart",
+                "text": "购物车",
+                "iconPath": "images/tab9.png",
+                "selectedIconPath": "images/tab10.png"
+            },
+            {
+                "pagePath": "pages/me/me",
+                "text": "我的",
+                "iconPath": "images/tab4.png",
+                "selectedIconPath": "images/tab8.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

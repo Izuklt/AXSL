@@ -1,0 +1,5 @@
+<view class="title">{{detailObj.title}}</view>
+
+<image src="{{detailObj.image}}"></image>
+
+<view class="content">{{detailObj.detail}}</view>

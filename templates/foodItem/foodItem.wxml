@@ -1,0 +1,33 @@
+<!-- 定义模板，指定模板的名字。其他的地方通过该名字使用模板。 模板上绑定的数据，是外部传入的。 -->
+<template name="foodItem">
+    <navigator url="../foodDetail/foodDetail?id={{item.id}}" hover-class="none">
+        <view class="item">
+            <image src="{{item.pic}}"></image>
+            <view class="content">
+                <view class="title">{{item.name}}</view>
+                <view class="desc">{{item.description}}</view>
+                <view class="buy-info">
+                    <text class="price">￥{{item.price}}</text>
+                    <text class="buy-num">{{item.buynum}}人付款</text>
+                </view>
+            </view>
+        </view>
+    </navigator>
+</template>
+
+<!-- 一个文件可以定义多个模板。需要有不同的名字。-->
+<template name="foodItem1">
+    <navigator url="../foodDetail/foodDetail?id={{id}}" hover-class="none">
+        <view class="item">
+            <image src="{{pic}}"></image>
+            <view class="content">
+                <view class="title">{{name}}</view>
+                <view class="desc">{{description}}</view>
+                <view class="buy-info">
+                    <text class="price">￥{{price}}</text>
+                    <text class="buy-num">{{buynum}}人付款</text>
+                </view>
+            </view>
+        </view>
+    </navigator>
+</template>

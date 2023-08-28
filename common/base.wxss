@@ -1,0 +1,4 @@
+/* 可以定义很多页面共享的一些样式*/
+page{
+    background-color: white;
+}

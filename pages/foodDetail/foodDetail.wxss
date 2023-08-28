@@ -1,0 +1,74 @@
+page{
+    background-color: #ddd;
+}
+
+.content{
+    padding-bottom: 100rpx;
+}
+
+.title , .price{
+    background-color: white;
+    padding: 16rpx;
+    font-size: 34rpx;
+    margin-bottom: 16rpx;
+}
+
+.desc{
+    padding: 16rpx;
+    background-color: white;
+    font-size: 24rpx;
+    letter-spacing: 3rpx;
+}
+
+.buy-info{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 100rpx;
+    bottom: 0;
+    background-color: white;
+}
+
+.buy-info image{
+    position: absolute;
+    width: 84rpx;
+    height: 84rpx;
+    right: 430rpx;
+    bottom: 8rpx;
+}
+.buy-info .num{
+    position: absolute;
+    width: 26rpx;
+    height: 26rpx;
+    background-color: red;
+    border: 1px solid orange;
+    color: white;
+    font-size: 20rpx;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 26rpx;
+    right: 425rpx;
+}
+
+button{
+    position: absolute;
+    top: 20rpx;
+    color: white;
+}
+#addBtn{
+    font-weight: 200;
+    right: 180rpx;
+    font-size: 28rpx;
+    width: 230rpx;
+    background-color: rgb(189, 55, 6);
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+#buyBtn{
+    font-weight: 200;
+    right: 10rpx;
+    font-size: 28rpx;
+    width: 220rpx;
+    background-color: rgb(233, 83, 29);
+}

@@ -1,0 +1,27 @@
+<!-- 搜索框 -->
+<view class="search">
+<!-- 自动获取焦点 -->
+    <input type="text" focus="true" placeholder="请输入你喜欢的商品" bindinput="searchFood"/>
+</view>
+
+<!-- 引入外部的模板 -->
+<import src="../../templates/foodItem/foodItem.wxml" />
+<!-- 搜索结果 -->
+<view class="list">
+    <!-- 使用外部的模板 -->
+    <block wx:for="{{searchFoodArr}}" wx:key="key">
+        <template is="foodItem" data="{{item}}"></template>
+    </block>
+  
+    <!-- <view class="item" wx:for="{{searchFoodArr}}" wx:key="key">
+        <image src="{{item.pic}}"></image>
+        <view class="content">
+            <view class="title">{{item.name}}</view>
+            <view class="desc">{{item.description}}</view>
+            <view class="buy-info">
+                <text class="price">￥{{item.price}}</text>
+                <text class="buy-num">{{item.buynum}}人付款</text>
+            </view>
+        </view>
+    </view>  -->
+</view>

@@ -1,0 +1,8 @@
+<!-- 引入模板 -->
+<import src="../../templates/foodItem/foodItem.wxml"></import>
+
+<view class="list">
+    <block wx:for="{{typeFoodArr}}" wx:key="key">
+        <template is="foodItem1" data="{{...item}}"></template>
+    </block>
+</view>

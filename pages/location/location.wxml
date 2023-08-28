@@ -1,0 +1,8 @@
+<view class="title">定位城市</view>
+
+<!-- 单击事件，请求手动定位。 -->
+    <button type="primary" size="mini" bindtap="getLocation">定位</button>
+
+<view class="title">热门城市</view>
+<!-- 点击热门城市的按钮，要切换到 食疗坊 的页面，并改变 当前城市。 -->
+    <button size="mini" wx:for="{{hotCities}}" wx:key="key" bindtap="selectHotCity" data-city-name="{{item}}">{{item}}</button>
